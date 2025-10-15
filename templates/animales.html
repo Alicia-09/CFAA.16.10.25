@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+
+{% block pagina %}
+Animales exoticos
+{% endblock %}
+
+{% block titulo %}
+Animales exoticos
+{% endblock %}
+
+{% block menu %}
+<div class="container my-5">
+
+    <div class="container-text-center  mb-5">
+        <h2 class="fw-bold text-danger">El Reino Animal</h2>
+        <p>
+            El reino animal está lleno de especies sorprendentes. A continuación te mostramos algunos ejemplos
+            acuáticos, terrestres y aéreos.
+        </p>
+    </div>
+
+    <div class="row align-items-center bg-light shadow p-4 mb-5">
+        <div class="col-md-6 text-center">
+            <img src="" alt="">
+        </div>
+        <div class="col-md-6">
+            <h4 class="fw-bold text-danger">La belleza del mundo acuatico</h4>
+            <p>
+                El océano es hogar de criaturas fascinantes como el Pez hacha, el Pez mandarín y el Pulpo Dumbo.
+                Estos animales destacan por sus colores, adaptaciones únicas y comportamientos sorprendentes.
+            </p>
+        </div>
+    </div>
+
+    <div class="text-center mb-4">
+        <h3 class="fw-bold text-danger">Ejemplos de animales exoticos</h3>
+    </div>
+
+    <div class="text-center mb-4">
+            <h3 class="text-danger">Acuaticos</h3>
+            <p>Los animales exóticos acuáticos son especies no nativas de un lugar que viven en hábitats de agua dulce o salada, como peces, reptiles, anfibios e invertebrados. Su excentricidad puede deberse a su apariencia inusual o sus adaptaciones únicas a ambientes extremos.</p>
+        </div>
+
+
+    <div class="row text-center">
+
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow">
+                <img src="{{ url_for('static', filename='img/pezh.jpg') }}" class="card-img-top" alt="Pez hacha">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Pez Hacha</h5>
+                    <p class="card-text">Vive en grandes profundidades y es capaz de hacerse casi invisible gracias a su
+                    color oscuro y la emisión de luz para mimetizarse con los reflejos de la superficie, tiene forma de hacha por su perfil dorsal recto.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow">
+                <img src="{{ url_for('static', filename='img/pezm.jpg') }}" class="card-img-top" alt="Pez Mandarín">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Pez Mandarín</h5>
+                    <p class="card-text">Conocido como el pez más bello del mundo marino, con colores vibrantes y aletas
+                        que parecen plumas, es un pez pequeño, de entre cinco y ocho centímetros de largo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow">
+                <img src="{{ url_for('static', filename='img/dumbo.jpg') }}" class="card-img-top" alt="Pangolín">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Pulpo Dumbo</h5>
+                    <p class="card-text">Un molusco de las profundidades marinas, llamado así por las grandes
+                        aletas que sobresalen de su "cabeza" y que se parecen a las orejas del personaje de Disney.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mb-4">
+            <h3 class="text-danger">Terrestres</h3>
+            <p>Los animales exóticos terrestres son animales no domésticos, como el erizo, la tortuga galápago, el
+                lagarto
+                basilisco y el pangolín, que se encuentran fuera de su hábitat natural o en lugares inusuales, a menudo
+                con
+                requerimientos especiales de cuidado y, en muchos casos, en peligro de extinción.</p>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <img src="{{ url_for('static', filename='img/hurones.jpg') }}" class="card-img-top" alt="Pangolín">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Huron</h5>
+                    <p class="card-text"> Es un animal sociable, activo y curioso, con un cuerpo alargado y patas cortas
+                    que le permite moverse en espacios reducidos, sus orígenes en Europa hacen que, al ser trasladados a otras regiones, se clasifiquen como exóticos. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <img src="{{ url_for('static', filename='img/Pango.jpg') }}" class="card-img-top" alt="Pangolín">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Pangolin</h5>
+                    <p class="card-text"> Un mamífero único conocido por su armadura de escamas, su dieta de hormigas y
+                        termitas, y su habilidad para enrollarse en una bola como defensa. Es el mamífero más traficado
+                        del
+                        mundo lo que lo ha llevado a estar en peligro de extincion.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mb-4">
+            <h3 class="text-danger">Aereos</h3>
+            <p>Los "animales exóticos aéreos" abarcan una variedad de especies voladoras y planeadoras de diferentes
+                grupos
+                que destacan por sus características únicas, adaptaciones para el vuelo o planeo y hábitats específicos.
+            </p>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <img src="{{ url_for('static', filename='img/Coli.jpg') }}" class="card-img-top" alt="Pangolín">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Colibries</h5>
+                    <p class="card-text"> Pequeños y ágiles, son aves originarias de América y se encuentran entre las
+                        más
+                        pequeñas del mundo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <img src="{{ url_for('static', filename='img/quetzal2.jpg') }}" class="card-img-top" alt="Pangolín">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Quetzal</h5>
+                    <p class="card-text"> El Quetzal es frecuentemente considerado como una de las aves más bellas
+                        debido a su
+                        plumaje iridiscente y su cola de hasta un metro de largo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock menu %}

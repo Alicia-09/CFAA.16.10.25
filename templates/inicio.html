@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block pagina %}
+Inicio
+{% endblock %}
+
+{% block titulo %}
+Bienvenido
+{% endblock %}
+
+{% block menu %}
+<section class="py-5 text-center" style="background-color: #f8bbd0;">
+    <div class="container">
+        <h1 class="fw-bold mb-3" style="color: #ad1457;">Bienvenido a mi pagina</h1>
+        <p class="lead text-secondary">
+            En esta pagina podras encontrar informacion muy interesante de diferentes temas segun lo que mas te llame la
+            atencion.
+            Te hablamos un poco sobre animales exoticos para que te adentres en el maravilloso reino animal tanto de
+            animales acuaticos como terrestres o aereos.
+            Si los animales no te llaman tanto la atencion tambien te contamos sobre vehiculos antiguos, aqui
+            encontraras un poco de historia sobre como fue que nacieron cinco vehiculos de diferentes marcas.
+            En el caso de que no te sea de interes ninguno de estos dos temas no te preocupes que seguro las 7
+            Maravillas del mundo si lo sera, te mostramos hermosas fotos, videos y te hablamos un poco de cada una de
+            ellas.
+            Ademas en la seccion de "Acerca de.." te contare un poco sobre mi.
+        </p>
+    </div>
+</section>
+
+<section class="py-5" style="background-color: #fce4ec;">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5" style="color: #e91e63;">Explora las secciones</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="{{ url_for('static', filename='img/animales.jpg') }}" class="card-img-top"
+                        alt="Animales exoticos">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" style="color: #f06292;">Animales exóticos</h5>
+                        <p class="card-text">
+                            Descubre especies únicas del mundo animal, sus hábitats, curiosidades y características
+                            sorprendentes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="{{ url_for('static', filename='img/maravillas.jpg') }}" class="card-img-top"
+                        alt="Maravillas del mundo">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" style="color: #f06292;">Las 7 maravillas del mundo</h5>
+                        <p class="card-text">
+                            Conoce los monumentos más impresionantes creados por la humanidad, llenos de historia y
+                            belleza.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="{{ url_for('static', filename='img/vehiculos.jpg') }}" class="card-img-top"
+                        alt="Vehiculos antiguos">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" style="color: #f06292;">Vehículos antiguos</h5>
+                        <p class="card-text">
+                            Viaja en el tiempo y conoce los automóviles clásicos que marcaron una época en la historia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock menu %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block pagina %}
+Acerca de
+{% endblock %}
+
+{% block titulo %}
+Acerca de mi
+{% endblock %}
+
+{% block menu %}
+<section class="py-5" style="background-color: #f8bbd0;">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-5 text-center mb-4 mb-md-0">
+                <img src="{{ url_for('static', filename='img/foto.jpg') }}" alt="Mi foto"
+                    class="img-fluid rounded shadow" style="border: 5px solid #f06292;">
+            </div>
+
+            <div class="col-md-7 text-white">
+                <h2 class="fw-bold">Acerca de mi</h2>
+
+                <p class="mt-3">
+                    Hola, yo soy una alumna del Cetis61, soy buena con el dibujo, diseño la caligrafia, me gusta mucho
+                    hacer trabajos a mano para poder demostrar en ellos mis habilidades al escribir titulos y decorar de
+                    una manera que sea muy llamativa y atractiva para las personas, las cosas
+                    que mas me gustan hacer es pasar tiempo con mi familia y amigos, me encanta salir a comprar ropa,
+                    pasear o comer fuera de casa, actualmente trabajo y estudio,
+                    tengo con esta dinamica desde los 15 por cuestiones economicas, vengo de una familia muy grande
+                    conformada por 6 miembros, 7 en total contandome a mi, yo tome
+                    la decision de trabajar para ayudar a mi papa y desde ese momento yo me hago cargo de mis gastos y
+                    de mis estudios. Lo que quiero ser en un futuro aun no lo tengo
+                    muy definido, de lo que si estoy segura es que quiero trabajar con algo relacionado a la
+                    programacion, yo entre en esta especialidad por mi primo
+                    que es mi gran ejemplo a seguir por ver en la poscicion que se encuentra ahora, todo este tiempo e
+                    pensado
+                    rendirme o que esta especialidad no es para mi ya que yo entre sin
+                    saber absolutamente nada de una computadora, sin embargo cada vez me llama mas la atencion y me
+                    resulta muy interesante, me ha gustado mucho y aunque sea dificil se
+                    que lograre graduarme y me esforzare por aprender para poder continuar la universidad. Mi sueño mas
+                    grande es tener un buen trabajo y ganar muy bien para poder ayudar
+                    a mis papas, tener mi casa, mi carro y vivir sola para poder viajar por el mundo.
+                </p>
+                <p>
+                    Mi objetivo actualmente es seguir creciendo como persona, lograr superarme y cumplir todas mis metas
+                    y sueños.
+                </p>
+
+                <h4 class="fw-semibold">Campos Fernandez Ailev Alicia</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock menu %}

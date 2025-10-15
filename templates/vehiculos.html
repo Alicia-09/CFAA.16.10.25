@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block pagina %}
+Vehiculos antiguos
+{% endblock %}
+
+{% block titulo %}
+Vehiculos Antiguos
+{% endblock %}
+
+{% block menu %}
+<div class="container my-5">
+
+    <div class="container-text-center  mb-5">
+        <h2 class="fw-bold text-danger">Evolucion del transporte</h2>
+        <p>
+            Los vehículos antiguos representan la evolución del transporte y el ingenio humano. A continuacion te
+            mostramos 5 vehiculos antiguos que marcaron un antes y un despues en la historia de la evolucion de estos.
+        </p>
+    </div>
+
+    <div class="row align-items-center bg-light shadow p-4 mb-5">
+        <div class="col-md-6 text-center">
+            <img src="" alt="">
+        </div>
+        <div class="col-md-6">
+            <h4 class="fw-bold text-danger">Los mejores autos clasicos</h4>
+            <p>
+                Los carros clásicos son automóviles que se distinguen por su valor histórico, diseño icónico y el hecho de que generalmente son vehículos con más de 25 años de antigüedad
+            </p>
+        </div>
+    </div>
+
+    <div class="text-center mb-4">
+        <h3 class="fw-bold text-danger">5 vehiculos antiguos</h3>
+    </div>
+
+    <div class="row text-center">
+
+        <div class="col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <img src="{{ url_for('static', filename='img/vocho.jpg') }}" class="card-img-top" alt="Pangolín">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Volkswagen Sedán (Vocho) (1960s a 1990s)</h5>
+                    <p class="card-text">Uno de los autos más queridos en México, reconocible por su diseño icónico y su
+                        durabilidad.Un vehículo
+                        económico, funcional y con un diseño inconfundible que lo hizo popular en muchos países.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <img src="{{ url_for('static', filename='img/mercedes.jpg') }}" class="card-img-top" alt="Pez Mandarín">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Mercedes-Benz 300SL (1957)</h5>
+                    <p class="card-text">Un hito en la historia automotriz por sus icónicas puertas de "ala de gaviota"
+                        y su diseño de auto de
+                        carreras. Es uno de los autos clásicos más caros, un deportivo de alta gama que fusionaba
+                        innovación técnica
+                        con un diseño espectacular.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow">
+                <img src="{{ url_for('static', filename='img/ford.jpg') }}" class="card-img-top" alt="Pez hacha">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Ford Mustang (1964)</h5>
+                    <p class="card-text">Lanzado en 1964, revolucionó el concepto de “pony car” y sigue siendo admirado
+                        por su estilo. Un deportivo
+                        asequible y con estilo para el público joven, con una enorme influencia cultural.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow">
+                <img src="{{ url_for('static', filename='img/chevrolet.jpg') }}" class="card-img-top" alt="Pangolín">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Chevrolet Impala (1965)</h5>
+                    <p class="card-text"> Representa el estilo grande y de lujo de la década de 1960 en Estados Unidos,
+                        con una presencia imponente.Un
+                        coche de gran tamaño, con un diseño característico y una experiencia de manejo lujosa, que
+                        definía los "muscle cars".</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow">
+                <img src="{{ url_for('static', filename='img/jaguar.jpg') }}" class="card-img-top" alt="Pangolín">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Jaguar E-Type (1961) </h5>
+                    <p class="card-text">Es considerado uno de los autos más bellos jamás diseñados, con una combinación
+                        de estética y rendimiento
+                        deportivo.Un vehículo de lujo con un diseño revolucionario que lo convirtió en un símbolo de la
+                        era.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock menu %}

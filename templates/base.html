@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="text-center py-4 text-white" style="background-color: #f06292;">
+        <h1 class="fw-bold">
+            Desarrollo de Plantilla Base
+        </h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e91e63;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-white" href="#">{% block pagina %}{% endblock %}</a>
+
+            <div class="navbar-nav text-white">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5000">Inicio</a>
+                <a class="nav-link" href="http://127.0.0.1:5000/maravillas">Las maravillas del mundo</a>
+                <a class="nav-link" href="http://127.0.0.1:5000/vehiculos">Vehiculos antiguos</a>
+                <a class="nav-link" href="http://127.0.0.1:5000/animales">Animales exoticos</a>
+                <a class="nav-link" href="http://127.0.0.1:5000/acerca">Acerca de</a>
+            </div>
+        </div>
+    </nav>
+
+{% block menu %}
+    
+{% endblock menu %}
+    
+    <footer class="text-center text-white" style="background-color: #f06292;">
+        <div class="container-fluid">
+        <p>Plantilla Base - Todos los derechos reservados</p>
+        <small> Diseñado con Bootstrap</small>
+    </footer>
+
+</div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</body>
+
+</html>
