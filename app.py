@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, flash
+from flask import Flask, render_template, request, redirect, flash, url
 
 app = Flask(__name__)
 
@@ -33,14 +33,14 @@ def formulario():
         Apellido = request.form["Apellido"]
         Fecha = request.form["Fecha"]
         Genero = request.form["Genero"]
-        Numero = request.form["Numero"]
+        Email = request.form["Email"]
         Contra = request.form["Contra"]
         ContraConfirm = request.form["ContraConfirm"]
     
         if Contra != ContraConfirm:
-           error = "La contraseña no coincide"
-           if error != None:
-            flash(error)
+            error = "La contraseña no coincide"
+            if error != None:
+                flash(error)
             return render_template("formulario.html")
         else:
             flash(f"Registro exitoso para el usuario:{Nombre} {Apellido}")

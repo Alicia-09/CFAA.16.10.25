@@ -33,6 +33,7 @@ Crear cuenta
                         <div class="col-6">
                             <label for="Apellido" class="form-label"></label>
                             <input type="text" class="form-control" id="Apellido" name="Apellido"
+                                value="{{ request.form.get('Apellido', '')}}"
                                 placeholder="Apellidos">
                         </div>
                     </section>
@@ -40,7 +41,8 @@ Crear cuenta
                     <section class="row">
                         <div class="mb-3">
                             <label for="Fecha" class="form-label">Fecha de nacimiento</label>
-                            <input type="date" class="form-control" id="Fecha" name="Fecha">
+                            <input type="date" class="form-control" id="Fecha" name="Fecha" 
+                            value="{{ request.form.get('Fecha', '')}}">
                         </div>
                     </section>
 
