@@ -16,7 +16,7 @@ Crear cuenta
             <div class="card-body p-4 p-md-5">
                 <div class="text-center mb-3 ">
                     <h1 class="text-danger fw-bold">Crea una cuenta</h1>
-                    <p class="text-center ">Es rapido y facil</p>
+                    <p class="text-center text-white">Es rapido y facil</p>
                 </div>
 
                 <form method="POST" action="{{ url_for('formulario') }}">
@@ -82,7 +82,7 @@ Crear cuenta
                                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                                 title="Debe contener al menos un numero, una mayuscula y una minuscula y al menos un digito">
                             <div id="passwordHelp" class="form-text">
-                                Minimo 8 caracteres, incluye mayusculas, minusculas y un digito
+                                Minimo 8 caracteres, incluye mayusculas, minusculas y un caracter especial
                             </div>
                         </div>
 
