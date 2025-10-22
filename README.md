@@ -1,4 +1,4 @@
-#Práctica 3  Plantilla Registro
+# Práctica 3  Plantilla Registro
 Una practica donde reutilizamos la practica anterior donde creamos una pagina con un menu que nos lleva a 4 sitios, agregamos una plantilla mas llamada registro que simula cuando creas una cuenta en cualquier tipo de aplicacion o pagina.
 
 # Datos Personales
