@@ -7,7 +7,7 @@ Una practica donde reutilizamos la practica anterior donde creamos una pagina co
 3. **Grado y grupo:** 3 D
 4. **Nombre de la materia:** Emplea Frameworks para el desarrollo de software
 5. **Profesor:** Treviño Tapia Juan Ruben
-6. **Fecha:** Miercoles 10 de octubre de 2025
+6. **Fecha:** Miercoles 22 de octubre de 2025
 7. **Actividad:** Realize una plantilla llamada registro la cual ya la teniamos hecha de un trabajo anterior y le agregamos funcionalidad, validacion y manejo de respuestas.
 
 # Fotografia
