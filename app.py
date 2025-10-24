@@ -48,10 +48,15 @@ def formulario():
 
     return render_template("formulario.html")
 
-@app.route("/sesion")
+@app.route('/sesion', methods=['GET', 'POST'])
 def sesion():
     return render_template("sesion.html")
 
-
+@app.route('/ValidaSesion', methods=['GET', 'POST'])
+def ValidaSesion():
+    if request.method == "POST":
+        Email = request.form.get('Email', '').strip()
+        Contra = request.form.get('Contra', '')
+        
 if __name__ == "__main__":
     app.run(debug=True)

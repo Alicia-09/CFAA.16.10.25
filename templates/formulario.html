@@ -38,6 +38,8 @@ Crear cuenta
                         </div>
                     </section>
 
+
+
                     <section class="row">
                         <div class="mb-3">
                             <label for="Fecha" class="form-label">Fecha de nacimiento</label>
@@ -128,7 +130,12 @@ Crear cuenta
                     </div>
 
                     <p class="text-center">
-                        <a href="http://127.0.0.1:5000/sesion">¿Ya tienes una cuenta?</a>
+                        <a href="http://127.0.0.1:5000/sesion">
+                            {%if sesion.get({Nombre} {Apellido}) %}
+                            ¿Ya tienes una cuenta? 
+                            {% elif %}
+                            Cerrar Session 
+                            {% endif %}</a>
                     </p>
 
                 </form>
