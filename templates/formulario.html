@@ -130,8 +130,8 @@ Crear cuenta
                     </div>
 
                     <p class="text-center">
-                        <a href="http://127.0.0.1:5000/sesion">
-                            {%if sesion.get({Nombre} {Apellido}) %}
+                        <a href="http://127.0.0.1:5000/login">
+                            {%if not login.get({Nombre} {Apellido}) %}
                             ¿Ya tienes una cuenta? 
                             {% elif %}
                             Cerrar Session 
